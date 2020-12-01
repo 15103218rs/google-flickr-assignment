@@ -1,9 +1,12 @@
 # GoogleFlickrIntegration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+node version: 10.13.0
 
 ## Development server
 
+Put google api key in index.html .
+Put Flickr api key and user id in src/app/modules/google-flickr.service.ts .
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding

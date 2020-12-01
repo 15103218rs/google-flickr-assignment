@@ -1,0 +1,11 @@
+<p>Google maps and Flickr API mashup</p>
+<div class="page-container row">
+    <div class="col-sm-12 col-md-6" id="map-container"></div>
+    <div class="col-sm-12 col-md-6 img-container">
+        <label for="pagination">Page:</label>
+        <select name="pagination" id="pagination" [(ngModel)]="selectedPage" (change)="getPagePhotos()">
+            <option *ngFor="let item of noOfPages;let i=index" [value]="i">{{i+1}}</option>
+        </select>
+        <img *ngFor="let item of publicPhotos" [src]="item.photo_url">
+    </div>
+</div>
